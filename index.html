@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/image/Group.png" />
+    <title>Portfolio</title>
+
+    <!-- Font Exo -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7C3AED',
+                    },
+                    fontFamily: {
+                        sans: ['Exo', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="font-sans bg-white text-gray-900 min-h-screen flex flex-col relative">
+
+    <!-- Navbar (desktop only) -->
+    <header class="hidden md:flex justify-between items-center px-10 py-5 border-b border-gray-100">
+        <a href="index.html">
+            <img src="assets/image/Group.png" alt="logo" class="w-8">
+        </a>
+
+        <nav class="flex space-x-8 text-gray-800 text-sm font-medium">
+            <a href="about.html" class="hover:text-primary transition">about</a>
+            <a href="work.html" class="hover:text-primary transition">work</a>
+            <a href="resume.html" class="hover:text-primary transition">resume</a>
+            <a href="contact.html" class="hover:text-primary transition">contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="flex flex-col justify-center items-center text-center flex-grow px-6 py-10 md:py-0">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-2">
+            hi! i’m <span class="text-gray-900">rahmandika adji pangestu</span>
+        </h1>
+
+        <h1 class="text-2xl sm:text-3xl md:text-3xl font-medium text-gray-400 mb-4">
+            <span class="font-normal text-transparent" style="-webkit-text-stroke: 1px #a3a3a3;">
+                you can call me
+            </span>
+            <span class="italic font-semibold text-black"> raka, adji, or dika</span>
+        </h1>
+
+        <p class="text-gray-500 text-sm sm:text-base max-w-md leading-relaxed">
+            seorang desainer grafis yang sedang merintis<br class="hidden sm:block">
+            dalam kehidupan semua desain tanpa S1.
+        </p>
+
+        <div class="flex flex-col sm:flex-row sm:space-x-8 mt-10 sm:mt-16 text-gray-600 text-sm space-y-4 sm:space-y-0">
+            <a href="work.html" class="hover:underline transition">→ see my work</a>
+            <a href="about.html" class="text-gray-500 hover:underline transition">→ more about me</a>
+        </div>
+    </main>
+
+    <!-- Bottom Nav (mobile) -->
+    <nav
+        class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 flex justify-around items-center py-3 px-6 shadow-sm z-50">
+        <a href="about.html" class="flex flex-col items-center text-gray-500 hover:text-primary transition">
+            <i data-lucide="user"></i>
+            <span class="text-xs mt-1">about</span>
+        </a>
+        <a href="work.html" class="flex flex-col items-center text-gray-500 hover:text-primary transition">
+            <i data-lucide="briefcase"></i>
+            <span class="text-xs mt-1">work</span>
+        </a>
+        <a href="resume.html" class="flex flex-col items-center text-gray-500 hover:text-primary transition">
+            <i data-lucide="file-text"></i>
+            <span class="text-xs mt-1">resume</span>
+        </a>
+        <a href="contact.html" class="flex flex-col items-center text-gray-500 hover:text-primary transition">
+            <i data-lucide="mail"></i>
+            <span class="text-xs mt-1">contact</span>
+        </a>
+    </nav>
+
+
+</body>
+<script>
+    lucide.createIcons();
+</script>
+
+</html>

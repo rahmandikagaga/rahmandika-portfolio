@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/image/Group.png" />
+    <title>Work</title>
+
+    <!-- Font Exo -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7C3AED',
+                    },
+                    fontFamily: {
+                        sans: ['Exo', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="font-sans bg-white text-gray-900 min-h-screen flex flex-col relative">
+
+    <!-- Navbar (desktop) -->
+    <header class="hidden md:flex justify-between items-center px-10 py-5 border-b border-gray-100">
+        <a href="index.html">
+            <img src="assets/image/Group.png" alt="logo" class="w-8">
+        </a>
+
+        <nav class="flex space-x-8 text-gray-800 text-sm font-medium">
+            <a href="about.html" class="hover:text-primary transition">about</a>
+            <a href="work.html" class="hover:text-primary transition">work</a>
+            <a href="resume.html" class="hover:text-primary transition">resume</a>
+            <a href="contact.html" class="hover:text-primary transition">contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex flex-col px-6 md:px-10 py-10 md:py-16 space-y-16">
+
+        <!-- SECTION 1 — INTRO -->
+        <section class="min-h-full flex flex-col justify-center items-center text-center">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">
+                    apa saja ya? yang saya buat? <br /> dalam dunia desain?
+                </h2>
+                <p class="text-gray-500 text-sm md:text-base mb-12">
+                    scroll kebawah untuk melihat apa saja selama ini <br />
+                    yang saya buat dalam dunia desain grafis
+                </p>
+
+                <!-- garis kecil tengah -->
+                <div class="w-24 border-b-2 border-gray-300 mx-auto"></div>
+            </div>
+            <a href="resume.html" class="mt-4 hover:underline">→ my resume</a>
+        </section>
+
+        <hr class="border-gray-200" />
+
+        <!-- SECTION 2 — WORK LIST (ZIGZAG) -->
+        <section class="space-y-24 relative">
+
+            <!-- Item 1 -->
+            <div class="grid md:grid-cols-2 gap-10 items-center relative">
+                <div class="md:pr-10">
+                    <h1 class="text-3xl font-bold italic">desain <span class="font-bold italic text-transparent"
+                            style="-webkit-text-stroke: 1px #000000;">logo</span>
+                    </h1>
+                    <p class="text-gray-500 text-sm mt-3 leading-relaxed">
+                        berikut adalah beberapa project logo dari personal project hingga realtime.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="hidden md:block absolute left-0 top-0 h-full w-px"></div>
+                    <div class="w-full h-72 flex items-center justify-center text-gray-400">
+                        <img src="assets/work/Group 8.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="grid md:grid-cols-2 gap-10 items-center relative">
+                <div class="relative order-2 md:order-1">
+                    <div class="hidden md:block absolute right-0 top-0 h-full w-px"></div>
+                    <div class="w-full h-72 flex items-center justify-center text-gray-400">
+                        <img src="assets/work/Group 9.png" alt="sosmed">
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 md:pl-10">
+                    <h3 class="text-3xl font-bold italic">desain <span class="font-bold italic text-transparent"
+                            style="-webkit-text-stroke: 1px #000000;">social
+                            media</span></h3>
+                    <p class="text-gray-500 text-sm mt-3 leading-relaxed">
+                        beberapa project social media desain dari personal project hingga realtime.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="grid md:grid-cols-2 gap-10 items-center relative">
+                <div class="md:pr-10">
+                    <h3 class="text-3xl font-bold italic">desain <span class="font-bold italic text-transparent"
+                            style="-webkit-text-stroke: 1px #000000;">banner</span>
+                    </h3>
+                    <p class="text-gray-500 text-sm mt-3 leading-relaxed">
+                        project banner promosi, event, dan keperluan usaha dengan komposisi profesional.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="hidden md:block absolute left-0 top-0 h-full w-px"></div>
+                    <div class="w-full h-72 flex items-center justify-center text-gray-400">
+                        <img src="assets/work/Group 10.png" alt="banner">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="grid md:grid-cols-2 gap-10 items-center relative">
+                <div class="relative order-2 md:order-1">
+                    <div class="hidden md:block absolute right-0 top-0 h-full w-px"></div>
+                    <div class="w-full h-72 flex items-center justify-center text-gray-400">
+                        <img src="assets/work/Group 11.png" alt="flyer">
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 md:pl-10">
+                    <h3 class="text-3xl font-bold italic">desain <span class="font-bold italic text-transparent"
+                            style="-webkit-text-stroke: 1px #000000;">flyer</span></h3>
+                    <p class="text-gray-500 text-sm mt-3 leading-relaxed">
+                        berikut adalah beberapa project desain potser/flyer dari personal project hingga realtime.
+                    </p>
+                </div>
+            </div>
+            <!-- Item 5 -->
+            <div class="grid md:grid-cols-2 gap-10 items-center relative">
+                <div class="md:pr-10">
+                    <h3 class="text-3xl font-bold italic">desain <span class="font-bold italic text-transparent"
+                            style="-webkit-text-stroke: 1px #000000;">banner</span>
+                    </h3>
+                    <p class="text-gray-500 text-sm mt-3 leading-relaxed">
+                        salah satu project branding dengan pendekatan identitas visual yang kuat.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="hidden md:block absolute left-0 top-0 h-full w-px"></div>
+                    <div class="w-full h-72 flex items-center justify-center text-gray-400">
+                        <img src="assets/work/Group 12.png" alt="sosmed">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="text-gray-400 text-xs text-center py-10">
+            ©copyright · radikavisual
+        </footer>
+
+        <!-- Bottom Nav (mobile) -->
+        <nav
+            class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 flex justify-around items-center py-3 px-6 shadow-sm z-50">
+            <a href="about.html" class="flex flex-col items-center text-gray-500 hover:text-primary transition">
+                <i data-lucide="user"></i>
+                <span class="text-xs mt-1">about</span>
+            </a>
+            <a href="work.html" class="flex flex-col items-center text-gray-500 hover:text-primary transition">
+                <i data-lucide="briefcase"></i>
+                <span class="text-xs mt-1">work</span>
+            </a>
+            <a href="resume.html" class="flex flex-col items-center text-gray-500 hover:text-primary transition">
+                <i data-lucide="file-text"></i>
+                <span class="text-xs mt-1">resume</span>
+            </a>
+            <a href="contact.html" class="flex flex-col items-center text-gray-500 hover:te  b  xt-primary transition">
+                <i data-lucide="mail"></i>
+                <span class="text-xs mt-1">contact</span>
+            </a>
+        </nav>
+
+        <script>
+            lucide.createIcons();
+        </script>
+</body>
+
+</html>

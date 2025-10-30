@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="icon" type="image/png" href="assets/image/Group.png" />
+
+    <!-- Font Exo -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7C3AED',
+                    },
+                    fontFamily: {
+                        sans: ['Exo', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="min-h-screen flex flex-col justify-between bg-white text-gray-800 font-[exo] relative">
+
+    <!-- Navbar (desktop) -->
+    <header class="hidden md:flex justify-between items-center px-10 py-5 border-b border-gray-100">
+        <a href="index.html">
+            <img src="assets/image/Group.png" alt="logo" class="w-8">
+        </a>
+
+        <nav class="flex space-x-8 text-gray-800 text-sm font-medium">
+            <a href="about.html" class="hover:text-primary transition">about</a>
+            <a href="work.html" class="hover:text-primary transition">work</a>
+            <a href="resume.html" class="hover:text-primary transition">resume</a>
+            <a href="contact.html" class="hover:text-primary transition">contact</a>
+        </nav>
+    </header>
+
+    <!-- Konten utama -->
+    <main class="flex flex-col items-center text-center mt-10 md:mt-20 px-6 md:px-20">
+        <h1 class="text-2xl md:text-3xl font-bold mb-10">kontak saya</h1>
+
+        <form action="https://api.web3forms.com/submit" method="POST" class="w-full max-w-lg flex flex-col gap-5">
+
+            <!-- Access Key -->
+            <input type="hidden" name="access_key" value="967ba968-67ac-40bb-88ff-6f697d285059">
+
+            <!-- Nama -->
+            <input type="text" name="name" placeholder="nama"
+                class="border border-gray-400 rounded-full px-6 py-3 text-gray-600 placeholder:italic focus:outline-none focus:border-primary"
+                required />
+
+            <!-- Email -->
+            <input type="email" name="email" placeholder="email"
+                class="border border-gray-400 rounded-full px-6 py-3 text-gray-600 placeholder:italic focus:outline-none focus:border-primary"
+                required />
+
+            <!-- Pesan -->
+            <textarea name="message" rows="6" placeholder="example: hai rahmandika, aku ada job nih!"
+                class="border border-gray-400 rounded-xl px-6 py-4 text-gray-600 placeholder:italic resize-none focus:outline-none focus:border-primary"
+                required></textarea>
+
+            <!-- Tombol -->
+            <button type="submit"
+                class="mt-4 border border-gray-700 rounded-full py-3 text-gray-700 hover:bg-gray-900 hover:text-white transition">
+                kirim pesan
+            </button>
+
+            <!-- Pesan sukses otomatis dari Web3Forms -->
+            <p class="text-sm text-center text-gray-500 mt-2">pesan kamu akan dikirim langsung ke radikavisual.</p>
+
+        </form>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="px-6 md:px-20 py-8 text-xs text-gray-500">
+        ©copyright.radikavisual
+    </footer>
+
+    <!-- Bottom Nav (mobile) -->
+    <nav
+        class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 flex justify-around items-center py-3 px-6 shadow-sm z-50">
+        <a href="about.html" class="flex flex-col items-center text-gray-500 hover:text-primary transition">
+            <i data-lucide="user"></i>
+            <span class="text-xs mt-1">about</span>
+        </a>
+        <a href="work.html" class="flex flex-col items-center text-gray-500 hover:text-primary transition">
+            <i data-lucide="briefcase"></i>
+            <span class="text-xs mt-1">work</span>
+        </a>
+        <a href="resume.html" class="flex flex-col items-center text-gray-500 hover:text-primary transition">
+            <i data-lucide="file-text"></i>
+            <span class="text-xs mt-1">resume</span>
+        </a>
+        <a href="contact.html" class="flex flex-col items-center text-gray-500 hover:text-primary transition">
+            <i data-lucide="mail"></i>
+            <span class="text-xs mt-1">contact</span>
+        </a>
+    </nav>
+
+</body>
+<script>
+    lucide.createIcons();
+</script>
+</body>
+
+</html>
